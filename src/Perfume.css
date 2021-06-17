@@ -1,0 +1,18 @@
+.perfume {
+  display: flex;
+  justify-content: center;
+  margin-left: auto;
+  margin-right: auto;
+  max-width: 1500px;
+}
+
+.perfume__row {
+  display: flex;
+  z-index: 1;
+  margin-left: 5px;
+  margin-right: 5px;
+}
+
+.perfume__container {
+  background-color: rgb(237, 237, 237);
+}
