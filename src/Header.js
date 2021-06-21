@@ -21,7 +21,7 @@ function Header() {
   const [{ basket }] = useStateValue();
   return (
     <Navbar className="navbar" expand="lg">
-      <Nav.Link className="link" to="/">
+      <Nav.Link as={Link} to={"/home"}>
         <img
           className="header__logo"
           alt=""
@@ -29,13 +29,16 @@ function Header() {
         />
       </Nav.Link>
       <Navbar.Toggle aria-controls="basic-navbar-nav" />
-      <Navbar.Collapse id="basic-navbar-nav">
+      <Navbar.Collapse>
         <Nav className="mr-auto">
-          <Nav.Link as={Link} to={"/home"}>
+          <Nav.Link as={Link} to={"/"}>
             HOME
           </Nav.Link>
           <Nav.Link as={Link} to={"/aboutus"}>
             ABOUT US
+          </Nav.Link>
+          <Nav.Link as={Link} to={"/login"}>
+            LOGIN
           </Nav.Link>
           <NavDropdown title="PRODUCTS" id="basic-nav-dropdown">
             <NavDropdown.Item>
@@ -70,10 +73,15 @@ function Header() {
             </NavDropdown.Item>
           </NavDropdown>
         </Nav>
-        <Form inline>
+
+        <div className="header__search">
+          <input className="header__searchInput" type="text"></input>
+          <SearchIcon className="header__searchIcon" />
+        </div>
+        {/* <Form inline>
           <FormControl type="text" placeholder="Search" className="mr-sm-2" />
           <Button variant="outline-success">Search</Button>
-        </Form>{" "}
+        </Form>{" "} */}
         <IconButton>
           <FavoriteBorderIcon
             fontSize="large"

@@ -2,18 +2,15 @@
   display: flex;
   flex-direction: column;
   z-index: 1;
-  justify-content: flex-end;
-  margin: 10px;
+  justify-content: center;
   padding: 20px;
   background-color: white;
-  width: 100%;
 }
 
 .product > img {
-  max-height: 200px;
   width: 100%;
   object-fit: contain;
-  margin-bottom: 15px;
+  margin-bottom: 20px;
 }
 
 .product__info {
@@ -23,7 +20,7 @@
   margin-bottom: 10px;
 }
 
-.product > button {
+.button {
   margin-top: 10px;
   border: 2px solid;
   color: #111;
@@ -35,15 +32,21 @@
   align-self: center;
 }
 
+.btn {
+  width: max-content;
+  display: flex;
+  align-self: center;
+}
 .product__rating {
   display: flex;
-  margin-top: -5px;
+  margin-top: 12px;
 }
 .product__price {
   display: flex;
-  margin-top: -5px;
 }
 .product__title {
   display: flex;
+  flex-wrap: wrap;
   margin-bottom: -5px;
+  text-align: start;
 }

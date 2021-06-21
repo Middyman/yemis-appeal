@@ -8,7 +8,6 @@ import Checkout from "./Checkout";
 import Home from "./Home";
 import Login from "./Login";
 import AboutUs from "./AboutUs";
-
 import "bootstrap/dist/css/bootstrap.min.css";
 
 function App() {

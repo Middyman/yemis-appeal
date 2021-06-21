@@ -14,6 +14,9 @@ function Perfume() {
             rating={3}
             price={5100}
           />
+        </div>
+
+        <div className="perfume__row">
           <Product
             id="P21"
             title="OUD 24 Hours ARABIAN EDP 100ml Plus A Free Spray Perfume Men, Women EDP"
@@ -21,6 +24,9 @@ function Perfume() {
             rating={5}
             price={5600}
           />
+        </div>
+
+        <div className="perfume__row">
           <Product
             id="P31"
             title="Fragrance World ZARA MAN, EAU DE PERFUM FOR MEN"
@@ -28,6 +34,9 @@ function Perfume() {
             rating={4}
             price={9000}
           />
+        </div>
+
+        <div className="perfume__row">
           <Product
             id="P41"
             title="Temptation EAU DE PARFUM TEMPTATION 100ML FOR MEN"
@@ -45,6 +54,9 @@ function Perfume() {
             rating={5}
             price={4300}
           />
+        </div>
+
+        <div className="perfume__row">
           <Product
             id="P22"
             title="Hugo Boss BOTTLED INTENSE"
@@ -52,6 +64,9 @@ function Perfume() {
             rating={5}
             price={32000}
           />
+        </div>
+
+        <div className="perfume__row">
           <Product
             id="P23"
             title="Suave Fragrance World Suave Perfume - EDP - 100ML"
@@ -59,6 +74,9 @@ function Perfume() {
             rating={3}
             price={5750}
           />
+        </div>
+
+        <div className="perfume__row">
           <Product
             id="P24"
             title="Franck Olivier Oud Vanille + Oud Touch (2 In 1) - 2 ×100ml Combo Pack"
@@ -76,6 +94,9 @@ function Perfume() {
             rating={4}
             price={5000}
           />
+        </div>
+
+        <div className="perfume__row">
           <Product
             id="P32"
             title="Lattafa Najdia With Free Spray Edp 100ml"
@@ -83,6 +104,9 @@ function Perfume() {
             rating={3}
             price={4000}
           />
+        </div>
+
+        <div className="perfume__row">
           <Product
             id="P33"
             title="Franck Olivier White Touch Long Lasting Perfume EDP_100ml!"
@@ -90,6 +114,9 @@ function Perfume() {
             rating={3}
             price={9000}
           />
+        </div>
+
+        <div className="perfume__row">
           <Product
             id="P34"
             title="Hugo Boss BOTTLED NIGHT"

@@ -14,6 +14,8 @@ function Bags() {
             rating={3}
             price={5100}
           />
+        </div>
+        <div className="bags__row">
           <Product
             id="B12"
             title="OUD 24 Hours ARABIAN EDP 100ml Plus A Free Spray bags Men, Women EDP"
@@ -21,6 +23,9 @@ function Bags() {
             rating={5}
             price={5600}
           />
+        </div>
+
+        <div className="bags__row">
           <Product
             id="B13"
             title="Fragrance World ZARA MAN, EAU DE PERFUM FOR MEN"
@@ -28,6 +33,9 @@ function Bags() {
             rating={4}
             price={9000}
           />
+        </div>
+
+        <div className="bags__row">
           <Product
             id="B14"
             title="Temptation EAU DE PARFUM TEMPTATION 100ML FOR MEN"
@@ -45,6 +53,9 @@ function Bags() {
             rating={5}
             price={4300}
           />
+        </div>
+
+        <div className="bags__row">
           <Product
             id="B22"
             title="Hugo Boss BOTTLED INTENSE"
@@ -52,6 +63,9 @@ function Bags() {
             rating={5}
             price={32000}
           />
+        </div>
+
+        <div className="bags__row">
           <Product
             id="B23"
             title="Suave Fragrance World Suave bags - EDP - 100ML"
@@ -59,6 +73,9 @@ function Bags() {
             rating={3}
             price={5750}
           />
+        </div>
+
+        <div className="bags__row">
           <Product
             id="B24"
             title="Franck Olivier Oud Vanille + Oud Touch (2 In 1) - 2 ×100ml Combo Pack"
@@ -76,6 +93,9 @@ function Bags() {
             rating={4}
             price={5000}
           />
+        </div>
+
+        <div className="bags__row">
           <Product
             id="B32"
             title="Lattafa Najdia With Free Spray Edp 100ml"
@@ -83,6 +103,9 @@ function Bags() {
             rating={3}
             price={4000}
           />
+        </div>
+
+        <div className="bags__row">
           <Product
             id="B33"
             title="Franck Olivier White Touch Long Lasting bags EDP_100ml!"
@@ -90,6 +113,9 @@ function Bags() {
             rating={3}
             price={9000}
           />
+        </div>
+
+        <div className="bags__row">
           <Product
             id="B34"
             title="Hugo Boss BOTTLED NIGHT"

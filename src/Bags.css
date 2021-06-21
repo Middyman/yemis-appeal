@@ -5,14 +5,21 @@
   margin-right: auto;
   max-width: 1500px;
 }
-
-.bags__row {
+.bags__container {
   display: flex;
-  z-index: 1;
-  margin-left: 5px;
-  margin-right: 5px;
+  justify-content: center;
+  flex-wrap: wrap;
+  background-color: rgb(237, 237, 237);
+  margin: 50px;
 }
 
-.bags__container {
-  background-color: rgb(237, 237, 237);
+.bags__row {
+  margin: 1rem;
+  font-size: 1rem;
+  font-weight: 500;
+  transition: all 0.2s ease-in-out;
+  cursor: pointer;
+  border: 1px solid red;
+  max-width: 27rem;
+  background-color: white;
 }

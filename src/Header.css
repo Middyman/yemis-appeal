@@ -13,14 +13,13 @@
 }
 
 .header__logo {
-  width: 10rem;
+  width: 20rem;
 }
 
-.header__search {
+Navbar > .header__search {
   display: flex;
   flex: 1;
   align-items: center;
-  border-radius: 24px;
 }
 .header__searchinput {
   padding: 10px;
@@ -34,6 +33,7 @@
   background-color: black;
   padding: 5px;
   height: 22px !important;
+  background-color: aqua;
 }
 
 .header__option {
