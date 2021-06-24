@@ -7,7 +7,6 @@ import "./Header.css";
 import { Link } from "react-router-dom";
 import { useStateValue } from "./StateProvider";
 import "bootstrap/dist/css/bootstrap.min.css";
-
 import {
   Button,
   Nav,
@@ -16,9 +15,16 @@ import {
   Form,
   FormControl,
 } from "react-bootstrap";
+import { auth } from "./firebase";
 
 function Header() {
-  const [{ basket }] = useStateValue();
+  const [{ basket, user }] = useStateValue();
+
+  const handleAuth = () => {
+    if (user) {
+      auth.signOut();
+    }
+  };
   return (
     <Navbar className="navbar" expand="lg">
       <Nav.Link as={Link} to={"/home"}>
@@ -37,9 +43,11 @@ function Header() {
           <Nav.Link as={Link} to={"/aboutus"}>
             ABOUT US
           </Nav.Link>
-          <Nav.Link as={Link} to={"/login"}>
-            LOGIN
+
+          <Nav.Link onClick={handleAuth} as={Link} to={!user && "/login"}>
+            {user ? "LOGOUT" : "LOGIN"}
           </Nav.Link>
+
           <NavDropdown title="PRODUCTS" id="basic-nav-dropdown">
             <NavDropdown.Item>
               <Nav.Link as={Link} to={"/bags"}>
@@ -94,7 +102,7 @@ function Header() {
               fontSize="large"
               className="header__shoppingcarticon"
             />
-            <span className="header__basketcount">{basket?.length}</span>
+            <span className="header__basketcount">{basket.length}</span>
           </IconButton>
         </Link>
       </Navbar.Collapse>
